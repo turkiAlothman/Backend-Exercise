@@ -20,8 +20,8 @@ protected $fillable = [
     "status",
 ];
 
-public const  TYPE_OPTIONS = ["Apartment","Villa","Townhouse","Duplex","Loft","Studio","Bungalow"];
-public const  STATUS_OPTIONS = ["Available","Under Construction","Rented","Sold","Under Offer"];
+public const  TYPE_OPTIONS = ["apartment","villa","Townhouse","duplex","loft","studio","bungalow"];
+public const  STATUS_OPTIONS = ["available","under_construction","rented","sold","under_offer"];
 
 private static function getTableAttributes(){
     return Schema::getColumnListing((new Property())->getTable());

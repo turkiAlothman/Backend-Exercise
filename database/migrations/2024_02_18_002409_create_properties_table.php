@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("title",50);
             $table->string("address",80);
-            $table->float("price");
+            $table->integer("price");
             $table->integer("bedrooms")->nullable();
             $table->integer("bathrooms")->nullable();
             $table->string("type",35);
